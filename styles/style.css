@@ -6,11 +6,16 @@ body{
 
 
 #login-box{
-    background-color: rgba(245, 245, 245, 0);
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), black);
     color: white;
     border-radius: 15px;
     margin: 5% 25%;
     padding: 2% 4%;
+}
+
+#login-box input[type="text"]{
+    background-color: rgba(0, 0, 0, 0);
+    outline: 2px black;
 }
 
 #title{
@@ -56,6 +61,11 @@ body{
 #email{
     display: flex;
     flex-direction: column;
+    max-width: 280px;
+}
+
+#phone-number #country-codes{
+    max-width: 45px;
 }
 
 #submit{
