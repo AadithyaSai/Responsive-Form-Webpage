@@ -1,0 +1,11 @@
+body{
+    background-image: url("../assets/Background.jpg");
+    background-size: cover;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#login-box{
+    background-color: whitesmoke;
+    border-radius: 15px;
+    margin: 5% 25%;
+}
