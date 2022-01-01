@@ -4,8 +4,60 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
 #login-box{
-    background-color: whitesmoke;
+    background-color: rgba(245, 245, 245, 0);
+    color: white;
     border-radius: 15px;
     margin: 5% 25%;
+    padding: 2% 4%;
+}
+
+#title{
+    text-align: center;
+    padding-bottom: 8%;
+}
+
+#login-form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+#name{
+    display: grid;
+}
+
+#name input{
+    max-width: 80%;
+}
+
+#name #fname{
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#name #lname{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+#gender #gender-radio{
+    text-align: center;
+}
+
+#gender #gender-radio input{
+    margin: 0 13% 0 0;
+}
+
+#email{
+    display: flex;
+    flex-direction: column;
+}
+
+#submit{
+    text-align: right;
 }

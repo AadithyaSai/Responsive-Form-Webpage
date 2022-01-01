@@ -14,72 +14,96 @@
         </div>
 
         <div id="login-form">
-            <label>First Name</label>
-            <input type="text" placeholder="Enter first name...">
+            <div id="name">
+                <div id="fname">
+                    <label for="first-name">First Name</label>
+                    <input type="text" class="textbox" id="first-name" placeholder="Enter first name...">
+                </div>
+
+    
+                <div id="lname">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" class="textbox" id="last-name" placeholder="Enter last name...">
+                </div>
+            </div>
+
+            <br style="clear: both;">
+
+            <div id="gender">
+                <span id="gender-title">Gender</span>
+                <br>
+                <br>
+                <div id="gender-radio">
+                    <label for="male">Male</label>
+                    <input type="radio" id="male" name="gender", value="M">
+                    <label for="female">Female</label>
+                    <input type="radio" id="female" name="gender", value="F">
+                    <label for="other">Other</label>
+                    <input type="radio", id="other" name="gender", value="M">
+                </div>
+            </div>
 
             <br>
 
-            <label>Last Name</label>
-            <input type="text" placeholder="Enter last name...">
+            <div id="email">
+    
+                <label for="email">Email ID</label>
+                <input type="email" id="email" placeholder="yourname123@example.com">
+            </div>
 
             <br>
 
-            <label>Gender</label>
-            <br>
-            <label>Male</label>
-            <input type="radio", name="gender", value="M">
-
-            <label>Female</label>
-            <input type="radio", name="gender", value="F">
-
-            <label>Other</label>
-            <input type="radio", name="gender", value="M">
+            <div id="phone-number">
+                <label>Mobile Number</label>
+                <label for="country-codes">+</label>
+                <input type="number" id="country-codes" min="000" max="999" placeholder="091">
+                <input type="tel" id="tel">
+            </div>
 
             <br>
 
-            <label>Email ID</label>
-            <input type="email" placeholder="yourname123@example.com">
+            <div id="college">
+                <label for="college-field">College</label>
+                <input type="text" id="college-field" class="textbox">
+            </div>
 
             <br>
 
-            <label>Mobile Number</label>
-
-            <label>+</label>
-            <input type="number" id="country-codes" min="000" max="999" placeholder="091"> 
-            <input type="tel" id="tel">
-
-            <br>
-
-            <label>Semester</label>
-            <select id="select-sem">
-                <option selected>S1</option>
-                <option>S2</option>
-                <option>S3</option>
-                <option>S4</option>
-                <option>S5</option>
-                <option>S6</option>
-                <option>S7</option>
-                <option>S8</option>
-            </select>
+            <div id="semester">
+                <label for="select-sem">Semester</label>
+                <select id="select-sem">
+                    <option selected>S1</option>
+                    <option>S2</option>
+                    <option>S3</option>
+                    <option>S4</option>
+                    <option>S5</option>
+                    <option>S6</option>
+                    <option>S7</option>
+                    <option>S8</option>
+                </select>
+            </div>
             
             <br>
 
-            <label>Class</label>
-            <select id="select-class">
-                <option>A</option>
-                <option>B</option>
-                <option>C</option>
-                <option>D</option>
-                <option>E</option>
-                <option>F</option>
-                <option>G</option>
-            </select>
+            <div id="class">
+                <label for="select-class">Class</label>
+                <select id="select-class">
+                    <option>A</option>
+                    <option>B</option>
+                    <option>C</option>
+                    <option>D</option>
+                    <option>E</option>
+                    <option>F</option>
+                    <option>G</option>
+                </select>
+            </div>
+
+            <div id="submit">
+                <input type="submit" value="submit">
+            </div>
             
             <br>
-
-
-
-
+            
         </div>
 
     </div>
