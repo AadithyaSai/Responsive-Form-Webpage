@@ -1,120 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Resonsive Form</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="./styles/style.css" />
+        <title>Responsive Form</title>
+    </head>
 
-<body>
-    <div id="login-box">
-        <div id="title">
-            <h2>Details</h2>
+    <body>
+        <div id="login-box">
+            <div id="title">
+                <h2>Personal Details</h2>
+            </div>
+            <div id="login-form">
+                <div id="name">
+                    <div id="fname">
+                        <label for="first-name">First Name</label>
+                        <input type="text" class="textbox" id="first-name" placeholder="Enter first name..." />
+                    </div>
+                    <div id="lname">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" class="textbox" id="last-name" placeholder="Enter last name..." />
+                    </div>
+                </div>
+                <br style="clear: both;" />
+                <div id="gender">
+                    <span id="gender-title">Gender</span>
+                    <br />
+                    <br />
+                    <div id="gender-options">
+                        <div id="gender-radio">
+                            <label for="male"><input type="radio" id="male" name="gender" , value="M" />Male</label>
+
+                            <label for="female"><input type="radio" id="female" name="gender" , value="F" />Female</label>
+
+                            <label for="other"><input type="radio" , id="other" name="gender" , value="M" />Other</label>
+                        </div>
+                    </div>
+                </div>
+                <br />
+                <div id="email">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" class="textbox" placeholder="yourname123@example.com" />
+                </div>
+                <br />
+                <div id="phone-number">
+                    <label>Mobile Number</label>
+                    <br />
+                    <label for="country-codes">+</label>
+                    <input type="number" id="country-codes" class="textbox" min="000" max="999" placeholder="091" />
+                    <label for="tel">-</label>
+                    <input type="tel" id="tel" class="textbox" />
+                </div>
+                <br />
+                <div id="college">
+                    <label for="college-field">College</label>
+                    <input type="text" id="college-field" class="textbox" />
+                </div>
+                <br />
+                <div id="semester-class">
+                    <label for="select-sem">
+                        Semester
+                        <select id="select-sem" class="dropdown">
+                            <option selected>S1</option>
+                            <option>S2</option>
+                            <option>S3</option>
+                            <option>S4</option>
+                            <option>S5</option>
+                            <option>S6</option>
+                            <option>S7</option>
+                            <option>S8</option>
+                        </select>
+                    </label>
+                    <br />
+                    <br />
+                    <label for="select-class">
+                        Class &emsp; &nbsp;
+                        <select id="select-class" class="dropdown">
+                            <option>A</option>
+                            <option>B</option>
+                            <option>C</option>
+                            <option>D</option>
+                            <option>E</option>
+                            <option>F</option>
+                            <option>G</option>
+                        </select>
+                    </label>
+                </div>
+                <div id="submit-div">
+                    <input type="submit" value="submit" id="submit-button" />
+                </div>
+            </div>
         </div>
-
-        <div id="login-form">
-            <div id="name">
-                <div id="fname">
-                    <label for="first-name">First Name</label>
-                    <input type="text" class="textbox" id="first-name" placeholder="Enter first name...">
-                </div>
-
-    
-                <div id="lname">
-                    <label for="last-name">Last Name</label>
-                    <input type="text" class="textbox" id="last-name" placeholder="Enter last name...">
-                </div>
-            </div>
-
-            <br style="clear: both;">
-
-            <div id="gender">
-                <span id="gender-title">Gender</span>
-                <br>
-                <br>
-                <div id="gender-radio">
-                    <div>
-                        <label for="male">Male</label>
-                        <input type="radio" id="male" name="gender", value="M">
-                    </div>
-                    <div>
-                        <label for="female">Female</label>
-                        <input type="radio" id="female" name="gender", value="F">
-                    </div>
-                    <div>
-                        <label for="other">Other</label>
-                        <input type="radio", id="other" name="gender", value="M">
-                    </div>
-                </div>
-            </div>
-
-            <br>
-
-            <div id="email">
-    
-                <label for="email">Email ID</label>
-                <input type="email" id="email" class="textbox" placeholder="yourname123@example.com">
-            </div>
-
-            <br>
-
-            <div id="phone-number">
-                <label>Mobile Number</label>
-                <br>
-                <label for="country-codes">+</label>
-                <input type="number" id="country-codes" class="textbox" min="000" max="999" placeholder="091">
-                <label for="tel">-</label>
-                <input type="tel" id="tel" class="textbox">
-            </div>
-
-            <br>
-
-            <div id="college">
-                <label for="college-field">College</label>
-                <input type="text" id="college-field" class="textbox">
-            </div>
-
-            <br>
-
-            <div id="semester">
-                <label for="select-sem">Semester</label>
-                <select id="select-sem" class="dropdown">
-                    <option selected>S1</option>
-                    <option>S2</option>
-                    <option>S3</option>
-                    <option>S4</option>
-                    <option>S5</option>
-                    <option>S6</option>
-                    <option>S7</option>
-                    <option>S8</option>
-                </select>
-            </div>
-            
-            <br>
-
-            <div id="class">
-                <label for="select-class">Class</label>
-                <select id="select-class" class="dropdown">
-                    <option>A</option>
-                    <option>B</option>
-                    <option>C</option>
-                    <option>D</option>
-                    <option>E</option>
-                    <option>F</option>
-                    <option>G</option>
-                </select>
-            </div>
-
-            <div id="submit-div">
-                <input type="submit" value="submit" id="submit-button">
-            </div>
-            
-            <br>
-            
-        </div>
-
-    </div>
-</body>
+    </body>
 </html>
