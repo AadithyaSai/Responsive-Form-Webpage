@@ -1,21 +1,30 @@
 body{
     background-image: url("../assets/Background.jpg");
     background-size: cover;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: sans-serif;
 }
 
 
 #login-box{
-    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.5), black);
-    color: white;
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 15px;
     margin: 5% 25%;
     padding: 2% 4%;
+    font-weight: 600;
 }
 
-#login-box input[type="text"]{
-    background-color: rgba(0, 0, 0, 0);
-    outline: 2px black;
+.textbox{
+    background: white;
+    margin: 4% 0 0 0;
+    padding: 2% 5%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+}
+
+#login-box input:focus{
+    outline: none;
 }
 
 #title{
@@ -65,9 +74,32 @@ body{
 }
 
 #phone-number #country-codes{
+    -moz-appearance: textfield;
     max-width: 45px;
 }
 
-#submit{
-    text-align: right;
+#phone-number .textbox{
+    padding: 1%;
+}
+
+#college{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.dropdown{
+    outline: none;
+    margin: 0 2%;
+}
+
+#submit-div{
+    margin-left: 500px;
+}
+
+#submit-button{
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 20%
 }
